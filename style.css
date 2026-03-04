@@ -1,0 +1,98 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: url("https://images.unsplash.com/photo-1490750967868-88aa4486c946") no-repeat center center/cover;
+    text-align: center;
+    color: white;
+    overflow-x: hidden;
+}
+
+header {
+    background: rgba(0,0,0,0.5);
+    padding: 50px 20px;
+}
+
+.music-btn {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    padding: 10px 15px;
+    border-radius: 20px;
+    border: none;
+    cursor: pointer;
+    background: white;
+    color: hotpink;
+    font-weight: bold;
+}
+
+.countdown-section {
+    margin: 30px 0;
+    background: rgba(0,0,0,0.4);
+    padding: 20px;
+}
+
+#countdown {
+    font-size: 26px;
+    font-weight: bold;
+}
+
+.gallery {
+    margin-top: 40px;
+    padding: 20px;
+}
+
+.person {
+    display: inline-block;
+    margin: 15px;
+    background: rgba(255,255,255,0.2);
+    padding: 15px;
+    border-radius: 15px;
+    transition: 0.3s;
+    backdrop-filter: blur(5px);
+}
+
+.person img {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.person:hover {
+    transform: scale(1.05);
+}
+
+.teacher {
+    border: 3px solid gold;
+}
+
+#hearts-container {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    z-index: -1;
+}
+
+.heart {
+    position: absolute;
+    font-size: 20px;
+    animation: floatUp linear forwards;
+}
+
+@keyframes floatUp {
+    from {
+        transform: translateY(100vh);
+        opacity: 1;
+    }
+    to {
+        transform: translateY(-10vh);
+        opacity: 0;
+    }
+}
+
+footer {
+    margin-top: 40px;
+    padding: 20px;
+    background: rgba(0,0,0,0.6);
+}
